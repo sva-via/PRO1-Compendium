@@ -22,12 +22,12 @@ nav:
   - Forside: index.md
   - Kapitler:
       - "Kapitel 1: Hvad er et objekt?": kapitel/01.md
-      - "Kapitel 2: Ansvar og indkapsling": kapitel/02.md
-      - "Kapitel 3: Invariants": kapitel/03.md
-      - "Kapitel 4: Konstruktører og gyldig tilstand": kapitel/04.md
-      - "Kapitel 5: Metoder og kontrolstrukturer": kapitel/05.md
-      - "Kapitel 6: Exceptions som designværktøj": kapitel/06.md
-      - "Kapitel 7: Immutable vs mutable objekter": kapitel/07.md
+      - "Kapitel 2: Første klasse: Name": kapitel/02.md
+      - "Kapitel 3: Validering og exception": kapitel/03.md
+      - "Kapitel 4: Metoder og ansvar": kapitel/04.md
+      - "Kapitel 5: Ændring af tilstand (mutatorer)": kapitel/05.md
+      - "Kapitel 6: Systematisk testdesign": kapitel/06.md
+      - "Kapitel 7: Fra specifikation til tests": kapitel/07.md
       - "Kapitel 8: Association, aggregation og composition": kapitel/08.md
       - "Kapitel 9: Samarbejdende objekter": kapitel/09.md
       - "Kapitel 10: Domænemodellering": kapitel/10.md
@@ -45,3 +45,5 @@ nav:
       - "Bilag B: IntelliJ quick guide": bilag/B.md
       - "Bilag C: Scanner og console I/O": bilag/C.md
       - "Bilag D: JUnit mini-guide": bilag/D.md
+      - "Bilag E: Spec2JUnit: AI som sparringspartner til test": bilag/D.md
+      
