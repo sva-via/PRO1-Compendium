@@ -1,4 +1,4 @@
-# Bilag – Spec2JUnit: AI som sparringspartner til test
+# Bilag E – Spec2JUnit: AI som sparringspartner til test
 
 ## 1. Formål
 
