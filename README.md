@@ -1,20 +1,9 @@
-# PRO1 Kompendium (MkDocs)
+# Documentation
 
-Dette projekt genererer et statisk website (HTML) med venstremenu over kapitler og bilag.
+This repository contains documentation in multiple languages. The default is Danish.
 
-## Struktur
-- `docs/` indeholder alt indhold i Markdown
-- `docs/images/` indeholder billeder
-- `mkdocs.yml` styrer menu og tema
+## Available Languages
+- [Danish](da/docs/index.md)
+- [English](en/docs/index.md)
 
-## Kør
-```bash
-pip install mkdocs mkdocs-material
-mkdocs serve
-```
-
-## Byg HTML
-```bash
-mkdocs build
-```
-Output ligger i `site/`.
+Please select your preferred language to proceed.
