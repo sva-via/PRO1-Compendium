@@ -1,4 +1,4 @@
-# Appendix – Java Syntax Quick Reference
+# Appendix A – Java Syntax Quick Reference
 
 ## Introduction
 
