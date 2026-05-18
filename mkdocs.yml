@@ -21,23 +21,23 @@ plugins:
 nav:
   - Forside: index.md
   - Kapitler:
-      - "Kapitel 1: Hvad er et objekt?": kapitel/01.md
-      - "Kapitel 2: Første klasse: Name": kapitel/02.md
-      - "Kapitel 3: Validering og exception": kapitel/03.md
-      - "Kapitel 4: Metoder og ansvar": kapitel/04.md
-      - "Kapitel 5: Ændring af tilstand (mutatorer)": kapitel/05.md
-      - "Kapitel 6: Systematisk testdesign": kapitel/06.md
-      - "Kapitel 7: Fra specifikation til tests": kapitel/07.md
-      - "Kapitel 8: Relationer mellem objekter": kapitel/08.md
-      - "Kapitel 9: Samlinger af objekter (1–til-mange relationer)": kapitel/09.md
-      - "Kapitel 10: equals, identitet og lighed": kapitel/10.md
-      - "Kapitel 11: Mini-projekt": kapitel/11.md
-      - "Kapitel 12: Design- og implementationsopgave": kapitel/12.md
-      - "Kapitel 13: Refactoring og code smells (intro)": kapitel/13.md
-      - "Kapitel 14: MyDate – en robust dato": kapitel/14.md
-      - "Kapitel 15: Clock – repræsentationsvalg": kapitel/15.md
-      - "Kapitel 16: Klassediagrammer": kapitel/16.md
-      - "Kapitel 17: Fra tekst til model": kapitel/17.md
+      - "Chapter 1: What Is an Object?": kapitel/01.md
+      - "Chapter 2: Strings, References, and null": kapitel/02.md
+      - "Chapter 3: Validering og exception": kapitel/03.md
+      - "Chapter 4: Metoder og ansvar": kapitel/04.md
+      - "Chapter 5: Ændring af tilstand (mutatorer)": kapitel/05.md
+      - "Chapter 6: Systematisk testdesign": kapitel/06.md
+      - "Chapter 7: Fra specifikation til tests": kapitel/07.md
+      - "Chapter 8: Relationer mellem objekter": kapitel/08.md
+      - "Chapter 9: Samlinger af objekter (1–til-mange relationer)": kapitel/09.md
+      - "Chapter 10: equals, identitet og lighed": kapitel/10.md
+      - "Chapter 11: Mini-projekt": kapitel/11.md
+      - "Chapter 12: Design- og implementationsopgave": kapitel/12.md
+      - "Chapter 13: Refactoring og code smells (intro)": kapitel/13.md
+      - "Chapter 14: MyDate – en robust dato": kapitel/14.md
+      - "Chapter 15: Clock – repræsentationsvalg": kapitel/15.md
+      - "Chapter 16: Klassediagrammer": kapitel/16.md
+      - "Chapter 17: Fra tekst til model": kapitel/17.md
   - Bilag:
       - "Bilag A: Java-syntaks quick reference": bilag/A.md
       - "Bilag B: IntelliJ quick guide": bilag/B.md
