@@ -6,7 +6,7 @@ Welcome to the PRO1 compendium.
 
 This compendium supports the course:
 
-**Programming 1 – Software Engineering 2.0**
+**Programming 1 – Software Engineering**
 
 The purpose of the course is not only to learn Java syntax, but to learn how to:
 
