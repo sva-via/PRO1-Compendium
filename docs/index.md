@@ -24,8 +24,8 @@ Efter at have arbejdet med kompendiet kan du bl.a.:
 
 ## Hurtig start
 
-- 👉 **Start her:** [Kapitel 1 – Hvad er et objekt?](kapitel/01.md)
-- 📎 **Opslagsværk:** [Bilag A – Java-syntaks quick reference](bilag/A.md)
+- 👉 **Start her:** [Kapitel 1 – Hvad er et objekt?](chapter/01.md)
+- 📎 **Opslagsværk:** [Bilag A – Java-syntaks quick reference](appendix/A.md)
 
 ---
 
