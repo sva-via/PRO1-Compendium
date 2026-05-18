@@ -32,9 +32,9 @@ nav:
       - "Chapter 9: ArrayList": chapter/09.md
       - "Chapter 10: Associations": chapter/10.md
   - Appendices:
-      - "Appendix A: Java-syntaks quick reference": appendix/A.md
-      - "Appendix B: IntelliJ quick guide": appendix/B.md
-      - "Appendix C: Scanner og console I/O": appendix/C.md
-      - "Appendix D: JUnit guide": appendix/D.md
+      - "Appendix A: Java Syntax Quick Reference": appendix/A.md
+      - "Appendix B: IntelliJ IDEA Quick Guide": appendix/B.md
+      - "Appendix C: Scanner and Console I/O": appendix/C.md
+      - "Appendix D: JUnit Mini Guide": appendix/D.md
 
       
