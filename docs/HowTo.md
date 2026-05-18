@@ -3,8 +3,8 @@
 Dette er en redigerbar web-version af kompendiet.
 
 ## Sådan redigerer du
-- Hvert kapitel ligger som Markdown i `docs/kapitel/`.
-- Hvert bilag ligger i `docs/bilag/`.
+- Hvert kapitel ligger som Markdown i `docs/chapter/`.
+- Hvert bilag ligger i `docs/appendix/`.
 - Billeder ligger i `docs/images/`.
 
 ### Indsæt en figur
