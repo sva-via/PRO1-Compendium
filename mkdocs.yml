@@ -39,9 +39,9 @@ nav:
       - "Chapter 16: Klassediagrammer": chapter/16.md
       - "Chapter 17: Fra tekst til model": chapter/17.md
   - Appendices:
-      - "Appendix A: Java-syntaks quick reference": apendix/A.md
-      - "Appendix B: IntelliJ quick guide": apendix/B.md
-      - "Appendix C: Scanner og console I/O": apendix/C.md
-      - "Appendix D: JUnit guide": apendix/D.md
-      - "Appendix E: Spec2JUnit: AI som sparringspartner til test": apendix/D.md
+      - "Appendix A: Java-syntaks quick reference": appendix/A.md
+      - "Appendix B: IntelliJ quick guide": appendix/B.md
+      - "Appendix C: Scanner og console I/O": appendix/C.md
+      - "Appendix D: JUnit guide": appendix/D.md
+      - "Appendix E: Spec2JUnit: AI som sparringspartner til test": appendix/D.md
       
