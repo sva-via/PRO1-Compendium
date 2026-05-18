@@ -42,6 +42,6 @@ nav:
       - "Appendix A: Java-syntaks quick reference": apendix/A.md
       - "Appendix B: IntelliJ quick guide": apendix/B.md
       - "Appendix C: Scanner og console I/O": apendix/C.md
-      - "Appendix D: JUnit mini-guide": apendix/D.md
+      - "Appendix D: JUnit guide": apendix/D.md
       - "Appendix E: Spec2JUnit: AI som sparringspartner til test": apendix/D.md
       
