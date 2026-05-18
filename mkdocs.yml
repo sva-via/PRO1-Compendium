@@ -39,9 +39,9 @@ nav:
       - "Chapter 16: Klassediagrammer": kapitel/16.md
       - "Chapter 17: Fra tekst til model": kapitel/17.md
   - Bilag:
-      - "Bilag A: Java-syntaks quick reference": bilag/A.md
-      - "Bilag B: IntelliJ quick guide": bilag/B.md
-      - "Bilag C: Scanner og console I/O": bilag/C.md
-      - "Bilag D: JUnit mini-guide": bilag/D.md
-      - "Bilag E: Spec2JUnit: AI som sparringspartner til test": bilag/D.md
+      - "Appendix A: Java-syntaks quick reference": bilag/A.md
+      - "Appendix B: IntelliJ quick guide": bilag/B.md
+      - "Appendix C: Scanner og console I/O": bilag/C.md
+      - "Appendix D: JUnit mini-guide": bilag/D.md
+      - "Appendix E: Spec2JUnit: AI som sparringspartner til test": bilag/D.md
       
