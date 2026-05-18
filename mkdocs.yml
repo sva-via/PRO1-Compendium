@@ -21,27 +21,27 @@ plugins:
 nav:
   - Home: index.md
   - Chapters:
-      - "Chapter 1: What Is an Object?": kapitel/01.md
-      - "Chapter 2: Strings, References, and null": kapitel/02.md
-      - "Chapter 3: Classes": kapitel/03.md
-      - "Chapter 4: Selections": kapitel/04.md
-      - "Chapter 5: Invariants": kapitel/05.md
-      - "Chapter 6: Responsibility": kapitel/06.md
-      - "Chapter 7: Arrays": kapitel/07.md
-      - "Chapter 8: Loops": kapitel/08.md
-      - "Chapter 9: ArrayList": kapitel/09.md
-      - "Chapter 10: Associations": kapitel/10.md
-      - "Chapter 11: Mini-projekt": kapitel/11.md
-      - "Chapter 12: Design- og implementationsopgave": kapitel/12.md
-      - "Chapter 13: Refactoring og code smells (intro)": kapitel/13.md
-      - "Chapter 14: MyDate – en robust dato": kapitel/14.md
-      - "Chapter 15: Clock – repræsentationsvalg": kapitel/15.md
-      - "Chapter 16: Klassediagrammer": kapitel/16.md
-      - "Chapter 17: Fra tekst til model": kapitel/17.md
+      - "Chapter 1: What Is an Object?": chapter/01.md
+      - "Chapter 2: Strings, References, and null": chapter/02.md
+      - "Chapter 3: Classes": chapter/03.md
+      - "Chapter 4: Selections": chapter/04.md
+      - "Chapter 5: Invariants": chapter/05.md
+      - "Chapter 6: Responsibility": chapter/06.md
+      - "Chapter 7: Arrays": chapter/07.md
+      - "Chapter 8: Loops": chapter/08.md
+      - "Chapter 9: ArrayList": chapter/09.md
+      - "Chapter 10: Associations": chapter/10.md
+      - "Chapter 11: Mini-projekt": chapter/11.md
+      - "Chapter 12: Design- og implementationsopgave": chapter/12.md
+      - "Chapter 13: Refactoring og code smells (intro)": chapter/13.md
+      - "Chapter 14: MyDate – en robust dato": chapter/14.md
+      - "Chapter 15: Clock – repræsentationsvalg": chapter/15.md
+      - "Chapter 16: Klassediagrammer": chapter/16.md
+      - "Chapter 17: Fra tekst til model": v/17.md
   - Appendices:
-      - "Appendix A: Java-syntaks quick reference": bilag/A.md
-      - "Appendix B: IntelliJ quick guide": bilag/B.md
-      - "Appendix C: Scanner og console I/O": bilag/C.md
-      - "Appendix D: JUnit mini-guide": bilag/D.md
-      - "Appendix E: Spec2JUnit: AI som sparringspartner til test": bilag/D.md
+      - "Appendix A: Java-syntaks quick reference": apendix/A.md
+      - "Appendix B: IntelliJ quick guide": apendix/B.md
+      - "Appendix C: Scanner og console I/O": apendix/C.md
+      - "Appendix D: JUnit mini-guide": apendix/D.md
+      - "Appendix E: Spec2JUnit: AI som sparringspartner til test": apendix/D.md
       
