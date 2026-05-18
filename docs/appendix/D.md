@@ -1,98 +1,536 @@
-# Bilag D – JUnit mini-guide
+# Appendix D – JUnit Mini Guide
 
-Dette bilag giver en kort introduktion til JUnit. I PRO1 er fokus stadig test som tænkning, men JUnit kan bruges som struktureret værktøj.
+## Introduction
 
-## 1. Opret testklasse
+This appendix provides a compact introduction to JUnit testing in PRO1.
 
-I IntelliJ kan du højreklikke på en klasse og vælge:
-Generate → Test
+JUnit is used throughout the course to:
 
-JUnit 5 anbefales.
+- test object behavior
+- verify invariants
+- test calculations
+- test exceptions
+- support object-oriented design
 
+Testing is an important part of the course philosophy.
+
+The course follows a strong:
+
+- test-first
+- design-first
+- object-first
+
+approach.
+
+---
+
+# 1. What Is JUnit?
+
+JUnit is a Java testing framework.
+
+JUnit allows programmers to:
+
+- write automated tests
+- verify expected behavior
+- detect errors early
+- document expected behavior
+
+JUnit tests are written as normal Java methods.
+
+---
+
+# 2. Why Testing Matters
+
+Testing helps verify that objects behave correctly.
+
+Example questions:
+
+- Does the constructor initialize correctly?
+- Does a method return the correct value?
+- Are invariants protected?
+- Are exceptions thrown correctly?
+
+Testing supports:
+
+- correctness
+- readability
+- maintainability
+- confidence during development
+
+---
+
+# 3. Structure of a JUnit Test
+
+Example:
+
+```java
+@Test void getAge()
+{
+  Person person = new Person("Bob", 20);
+
+  assertEquals(20, person.getAge());
+}
 ```
+
+A test usually contains:
+
+1. Setup
+2. Action
+3. Verification
+
+---
+
+# 4. Importing JUnit
+
+Typical imports:
+
+```java
 import org.junit.jupiter.api.Test;
+
 import static org.junit.jupiter.api.Assertions.*;
 ```
-## 2. Simpel test
 
-```
-public class MyDateTest {
+These imports provide:
+- `@Test`
+- assertion methods
 
-    @Test
-    public void testIsBefore() {
+---
 
-        MyDate d1 = new MyDate(2024, 1, 1);
-        MyDate d2 = new MyDate(2024, 1, 2);
+# 5. The @Test Annotation
 
-        assertTrue(d1.isBefore(d2));
-    }
+JUnit identifies test methods using `@Test`.
+
+Example:
+
+```java
+@Test void isAdult()
+{
+  // test code
 }
 ```
-@Test markerer en testmetode.
-assertTrue kontrollerer, at betingelsen er sand.
 
-## 3. Centrale assertions
+Without `@Test`, the method is not executed as a test.
 
+---
+
+# 6. Naming Test Methods
+
+Test names should describe behavior clearly.
+
+Good examples:
+
+```java
+@Test void incrementOnceReturns1()
 ```
-assertEquals(5, value);
-assertTrue(condition);
-assertFalse(condition);
-assertNotNull(object);
+
+```java
+@Test void constructorRejectsNegativeAge()
 ```
-Assertions udtrykker forventet adfærd – ikke implementeringsdetaljer.
 
-## 4. Test af exceptions
+Poor examples:
 
+```java
+@Test void test1()
 ```
-@Test
-public void testInvalidMonth() {
 
-    assertThrows(IllegalArgumentException.class, () -> {
-        new MyDate(2024, 13, 1);
-    });
+Readable test names help explain system behavior.
+
+---
+
+# 7. assertEquals
+
+`assertEquals` checks expected values.
+
+Example:
+
+```java
+assertEquals(20, person.getAge());
+```
+
+Structure:
+
+```java
+assertEquals(expected, actual)
+```
+
+---
+
+# 8. Testing double Values
+
+Floating point numbers are approximate.
+
+Tests therefore use an epsilon value.
+
+Example:
+
+```java
+private static final double EPSILON = 0.00001;
+```
+
+Example:
+
+```java
+assertEquals(3.14, circle.getArea(), EPSILON);
+```
+
+---
+
+# 9. assertTrue and assertFalse
+
+Used for boolean methods.
+
+Example:
+
+```java
+assertTrue(person.isAdult());
+```
+
+Example:
+
+```java
+assertFalse(person.isAdult());
+```
+
+Boolean methods are common in object-oriented design.
+
+---
+
+# 10. assertNull and assertNotNull
+
+Used for references.
+
+Example:
+
+```java
+assertNull(person.getEmail());
+```
+
+Example:
+
+```java
+assertNotNull(person.getEmail());
+```
+
+---
+
+# 11. Testing Exceptions
+
+JUnit can verify that exceptions are thrown.
+
+Example:
+
+```java
+@Test void negativeAgeThrowsException()
+{
+  assertThrows(IllegalArgumentException.class,
+      () -> new Person("Bob", -1));
 }
 ```
-assertThrows verificerer, at den forventede exception kastes.
 
-## 5. Arrange – Act – Assert
+This is important for testing invariants and validation.
 
-En god test følger strukturen:
+---
 
-Arrange: Opret objekter
-Act: Udfør handling
-Assert: Kontroller resultat
+# 12. Understanding Lambda Expressions in Tests
 
+Example:
+
+```java
+() -> new Person("Bob", -1)
 ```
-@Test
-public void testWithdraw() {
 
-    // Arrange
-    Account a = new Account(100);
+This represents code that should throw the exception.
 
-    // Act
-    a.withdraw(40);
+At this stage of the course, it is enough to understand:
 
-    // Assert
-    assertEquals(60, a.getBalance());
+- JUnit executes the code
+- JUnit checks whether the exception occurs
+
+Detailed lambda syntax is introduced later in the course.
+
+---
+
+# 13. Testing Constructors
+
+Constructors should be tested carefully.
+
+Example:
+
+```java
+@Test void constructorInitializesName()
+{
+  Person person = new Person("Bob", 20);
+
+  assertEquals("Bob", person.getName());
 }
 ```
-## 6. Designprincip i PRO1
 
-JUnit er et værktøj – ikke en erstatning for design.
+Constructors are responsible for establishing valid state.
 
-Hvis det er svært at skrive tests, er designet ofte uklart.
+---
 
-Test bør fokusere på:
-- Offentlig adfærd
-- Invariants
-- Boundary values
-- Exceptions
+# 14. Testing Setters
 
-## 7. Typiske fejl og misforståelser
+Setter methods should preserve invariants.
 
-1) At teste private felter direkte.
-2) At skrive tests, der afhænger af kørselsrækkefølge.
-3) At ignorere edge cases.
-4) At bruge JUnit uden at forstå, hvad der testes.
+Example:
 
-Brug JUnit som struktureret støtte – men tænk altid før du tester.
+```java
+@Test void setAgeChangesAge()
+{
+  Person person = new Person("Bob", 20);
+
+  person.setAge(25);
+
+  assertEquals(25, person.getAge());
+}
+```
+
+---
+
+# 15. Testing Invalid State
+
+Invalid input should also be tested.
+
+Example:
+
+```java
+@Test void setNegativeAgeThrowsException()
+{
+  Person person = new Person("Bob", 20);
+
+  assertThrows(IllegalArgumentException.class,
+      () -> person.setAge(-1));
+}
+```
+
+Testing invalid behavior is just as important as testing valid behavior.
+
+---
+
+# 16. Boundary Value Testing
+
+Boundary values are especially important.
+
+Example:
+
+```text
+age = 0
+age = 1
+age = 17
+age = 18
+```
+
+Example:
+
+```java
+@Test void age18IsAdult()
+{
+  Person person = new Person("Bob", 18);
+
+  assertTrue(person.isAdult());
+}
+```
+
+---
+
+# 17. Testing Arrays and Collections
+
+Collections should also be tested.
+
+Example:
+
+```java
+@Test void addGradeIncreasesSize()
+{
+  GradeList list = new GradeList();
+
+  list.addGrade(12);
+
+  assertEquals(1, list.size());
+}
+```
+
+Important test cases include:
+
+- empty collections
+- adding elements
+- removing elements
+- searching
+- boundary indexes
+
+---
+
+# 18. Testing Object Collaboration
+
+Associations should also be tested.
+
+Example:
+
+```java
+@Test void addStudent()
+{
+  SchoolClass c = new SchoolClass();
+  Student s = new Student("Ada");
+
+  c.addStudent(s);
+
+  assertEquals(1, c.numberOfStudents());
+}
+```
+
+Object relationships are important in later sessions.
+
+---
+
+# 19. Arrange – Act – Assert
+
+A common structure for tests:
+
+## Arrange
+
+Create objects and test data.
+
+## Act
+
+Call the method being tested.
+
+## Assert
+
+Verify the result.
+
+Example:
+
+```java
+@Test void birthdayIncreasesAge()
+{
+  // Arrange
+  Person person = new Person("Bob", 20);
+
+  // Act
+  person.birthday();
+
+  // Assert
+  assertEquals(21, person.getAge());
+}
+```
+
+This structure improves readability.
+
+---
+
+# 20. Good Testing Principles
+
+Good tests should:
+
+- be small
+- focus on one behavior
+- have readable names
+- be independent
+- test observable behavior
+
+Tests should not depend on:
+
+- console output
+- execution order
+- hidden internal details
+
+---
+
+# 21. What Should Be Tested?
+
+Important areas:
+
+## Constructors
+
+- correct initialization
+- invalid input
+
+## Methods
+
+- calculations
+- state changes
+- boolean behavior
+
+## Invariants
+
+- valid state
+- invalid state
+
+## Collections
+
+- insertion
+- removal
+- searching
+
+## Associations
+
+- adding objects
+- removing objects
+- collaboration
+
+---
+
+# 22. Common Beginner Mistakes
+
+Common mistakes:
+
+1. Forgetting `@Test`
+2. Testing multiple behaviors in one test
+3. Using unclear test names
+4. Forgetting boundary cases
+5. Only testing valid input
+6. Using console output instead of assertions
+7. Forgetting epsilon for `double`
+8. Writing tests dependent on other tests
+
+---
+
+# 23. JUnit and Course Philosophy
+
+Testing is not an optional extra.
+
+In PRO1, testing is part of:
+
+- understanding object behavior
+- understanding responsibility
+- protecting invariants
+- designing maintainable systems
+
+JUnit supports object-oriented thinking.
+
+---
+
+# 24. Recommended Workflow
+
+A recommended workflow:
+
+1. Design the class
+2. Write a small test
+3. Implement minimal code
+4. Run the test
+5. Improve the design
+6. Add more tests
+
+This supports:
+
+- test-first thinking
+- incremental development
+- better design decisions
+
+---
+
+# Final Remarks
+
+JUnit is an essential tool in modern software development.
+
+The goal is not simply to make tests pass.
+
+The real goal is to:
+- understand behavior
+- protect invariants
+- support design
+- create reliable software
+
+Good tests help programmers think clearly about object responsibility and expected behavior.
+
