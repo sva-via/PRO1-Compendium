@@ -124,7 +124,7 @@ Separating tests from source code improves readability and structure.
 
 ## 4. Creating a New IntelliJ Project
 
-## Step 1
+### Step 1
 
 Open IntelliJ IDEA.
 
@@ -136,7 +136,7 @@ New Project
 
 ---
 
-## Step 2
+### Step 2
 
 Choose:
 
@@ -146,7 +146,7 @@ Java
 
 ---
 
-## Step 3
+### Step 3
 
 Choose the correct JDK.
 
@@ -160,7 +160,7 @@ If no JDK is installed, IntelliJ can usually download one automatically.
 
 ---
 
-## Step 4
+### Step 4
 
 Choose a project name.
 
@@ -172,7 +172,7 @@ PRO1
 
 ---
 
-## Step 5
+### Step 5
 
 Press:
 
@@ -188,13 +188,13 @@ Each exercise should normally be created as its own module.
 
 ---
 
-## Step 1
+### Step 1
 
 Right-click the project name.
 
 ---
 
-## Step 2
+### Step 2
 
 Select:
 
@@ -204,7 +204,7 @@ New → Module
 
 ---
 
-## Step 3
+### Step 3
 
 Choose:
 
@@ -214,7 +214,7 @@ Java
 
 ---
 
-## Step 4
+### Step 4
 
 Choose a module name.
 
@@ -226,7 +226,7 @@ Person_v1
 
 ---
 
-## Step 5
+### Step 5
 
 Press:
 
@@ -238,13 +238,13 @@ Create
 
 ## 6. Creating the Test Directory
 
-## Step 1
+### Step 1
 
 Right-click the module name.
 
 ---
 
-## Step 2
+### Step 2
 
 Select:
 
@@ -254,7 +254,7 @@ New → Directory
 
 ---
 
-## Step 3
+### Step 3
 
 Create:
 
@@ -264,7 +264,7 @@ Test
 
 ---
 
-## Step 4
+### Step 4
 
 Right-click the `Test` directory.
 
@@ -278,7 +278,7 @@ Mark Directory As → Test Sources Root
 
 ## 7. Creating a Class
 
-## Step 1
+### Step 1
 
 Right-click:
 
@@ -288,7 +288,7 @@ src
 
 ---
 
-## Step 2
+### Step 2
 
 Select:
 
@@ -298,7 +298,7 @@ New → Java Class
 
 ---
 
-## Step 3
+### Step 3
 
 Enter the class name.
 
@@ -310,7 +310,7 @@ Person
 
 ---
 
-## Step 4
+### Step 4
 
 Press:
 
@@ -328,7 +328,7 @@ The easiest way to create a JUnit test class in IntelliJ is directly from the cl
 
 ---
 
-## Step 1
+### Step 1
 
 Open the class.
 
@@ -340,7 +340,7 @@ Person.java
 
 ---
 
-## Step 2
+### Step 2
 
 Place the cursor on the class name.
 
@@ -352,7 +352,7 @@ public class Person
 
 ---
 
-## Step 3
+### Step 3
 
 Press:
 
@@ -362,7 +362,7 @@ Alt + Enter
 
 ---
 
-## Step 4
+### Step 4
 
 Select:
 
@@ -372,7 +372,7 @@ Create Test
 
 ---
 
-## Step 5
+### Step 5
 
 Choose:
 
@@ -396,7 +396,7 @@ IntelliJ will then:
 
 ---
 
-## Step 6
+### Step 6
 
 Press:
 
@@ -457,7 +457,7 @@ IntelliJ shows:
 
 ## 10. Useful Keyboard Shortcuts
 
-## Search Everywhere
+### Search Everywhere
 
 ```text
 Double Shift
@@ -465,7 +465,7 @@ Double Shift
 
 ---
 
-## Generate Code
+### Generate Code
 
 ```text
 Alt + Insert
@@ -481,7 +481,7 @@ Useful for generating:
 
 ---
 
-## Quick Fix
+### Quick Fix
 
 ```text
 Alt + Enter
@@ -489,7 +489,7 @@ Alt + Enter
 
 ---
 
-## Reformat Code
+### Reformat Code
 
 ```text
 Ctrl + Alt + L
@@ -497,7 +497,7 @@ Ctrl + Alt + L
 
 ---
 
-## Rename
+### Rename
 
 ```text
 Shift + F6
@@ -505,7 +505,7 @@ Shift + F6
 
 ---
 
-## Navigate to Declaration
+### Navigate to Declaration
 
 ```text
 Ctrl + Click
@@ -551,7 +551,7 @@ used throughout the course.
 
 ---
 
-# Final Remarks
+## Final Remarks
 
 Learning IntelliJ takes practice.
 
