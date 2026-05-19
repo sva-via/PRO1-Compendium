@@ -24,7 +24,7 @@ approach.
 
 ---
 
-# 1. What Is JUnit?
+## 1. What Is JUnit?
 
 JUnit is a Java testing framework.
 
@@ -39,7 +39,7 @@ JUnit tests are written as normal Java methods.
 
 ---
 
-# 2. Why Testing Matters
+## 2. Why Testing Matters
 
 Testing helps verify that objects behave correctly.
 
@@ -59,7 +59,7 @@ Testing supports:
 
 ---
 
-# 3. Structure of a JUnit Test
+## 3. Structure of a JUnit Test
 
 Example:
 
@@ -80,7 +80,7 @@ A test usually contains:
 
 ---
 
-# 4. Importing JUnit
+## 4. Importing JUnit
 
 Typical imports:
 
@@ -96,7 +96,7 @@ These imports provide:
 
 ---
 
-# 5. The @Test Annotation
+## 5. The @Test Annotation
 
 JUnit identifies test methods using `@Test`.
 
@@ -113,7 +113,7 @@ Without `@Test`, the method is not executed as a test.
 
 ---
 
-# 6. Naming Test Methods
+## 6. Naming Test Methods
 
 Test names should describe behavior clearly.
 
@@ -137,7 +137,7 @@ Readable test names help explain system behavior.
 
 ---
 
-# 7. assertEquals
+## 7. assertEquals
 
 `assertEquals` checks expected values.
 
@@ -155,7 +155,7 @@ assertEquals(expected, actual)
 
 ---
 
-# 8. Testing double Values
+## 8. Testing double Values
 
 Floating point numbers are approximate.
 
@@ -175,7 +175,7 @@ assertEquals(3.14, circle.getArea(), EPSILON);
 
 ---
 
-# 9. assertTrue and assertFalse
+## 9. assertTrue and assertFalse
 
 Used for boolean methods.
 
@@ -195,7 +195,7 @@ Boolean methods are common in object-oriented design.
 
 ---
 
-# 10. assertNull and assertNotNull
+## 10. assertNull and assertNotNull
 
 Used for references.
 
@@ -213,7 +213,7 @@ assertNotNull(person.getEmail());
 
 ---
 
-# 11. Testing Exceptions
+## 11. Testing Exceptions
 
 JUnit can verify that exceptions are thrown.
 
@@ -231,7 +231,7 @@ This is important for testing invariants and validation.
 
 ---
 
-# 12. Understanding Lambda Expressions in Tests
+## 12. Understanding Lambda Expressions in Tests
 
 Example:
 
@@ -250,7 +250,7 @@ Detailed lambda syntax is introduced later in the course.
 
 ---
 
-# 13. Testing Constructors
+## 13. Testing Constructors
 
 Constructors should be tested carefully.
 
@@ -269,7 +269,7 @@ Constructors are responsible for establishing valid state.
 
 ---
 
-# 14. Testing Setters
+## 14. Testing Setters
 
 Setter methods should preserve invariants.
 
@@ -288,7 +288,7 @@ Example:
 
 ---
 
-# 15. Testing Invalid State
+## 15. Testing Invalid State
 
 Invalid input should also be tested.
 
@@ -308,7 +308,7 @@ Testing invalid behavior is just as important as testing valid behavior.
 
 ---
 
-# 16. Boundary Value Testing
+## 16. Boundary Value Testing
 
 Boundary values are especially important.
 
@@ -334,7 +334,7 @@ Example:
 
 ---
 
-# 17. Testing Arrays and Collections
+## 17. Testing Arrays and Collections
 
 Collections should also be tested.
 
@@ -361,7 +361,7 @@ Important test cases include:
 
 ---
 
-# 18. Testing Object Collaboration
+## 18. Testing Object Collaboration
 
 Associations should also be tested.
 
@@ -383,19 +383,19 @@ Object relationships are important in later sessions.
 
 ---
 
-# 19. Arrange – Act – Assert
+## 19. Arrange – Act – Assert
 
 A common structure for tests:
 
-## Arrange
+### Arrange
 
 Create objects and test data.
 
-## Act
+### Act
 
 Call the method being tested.
 
-## Assert
+### Assert
 
 Verify the result.
 
@@ -419,7 +419,7 @@ This structure improves readability.
 
 ---
 
-# 20. Good Testing Principles
+## 20. Good Testing Principles
 
 Good tests should:
 
@@ -437,33 +437,33 @@ Tests should not depend on:
 
 ---
 
-# 21. What Should Be Tested?
+## 21. What Should Be Tested?
 
 Important areas:
 
-## Constructors
+### Constructors
 
 - correct initialization
 - invalid input
 
-## Methods
+### Methods
 
 - calculations
 - state changes
 - boolean behavior
 
-## Invariants
+### Invariants
 
 - valid state
 - invalid state
 
-## Collections
+### Collections
 
 - insertion
 - removal
 - searching
 
-## Associations
+### Associations
 
 - adding objects
 - removing objects
@@ -471,7 +471,7 @@ Important areas:
 
 ---
 
-# 22. Common Beginner Mistakes
+## 22. Common Beginner Mistakes
 
 Common mistakes:
 
@@ -486,7 +486,7 @@ Common mistakes:
 
 ---
 
-# 23. JUnit and Course Philosophy
+## 23. JUnit and Course Philosophy
 
 Testing is not an optional extra.
 
