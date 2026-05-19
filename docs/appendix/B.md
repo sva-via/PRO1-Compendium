@@ -492,7 +492,7 @@ A recommended workflow for PRO1:
 
 1. Create the module
 2. Create the `Test` directory
-3. Create the class
+3. Create the class in the src directory
 4. Create the test class
 5. Write a small test
 6. Implement the simplest code
