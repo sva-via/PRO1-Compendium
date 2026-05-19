@@ -79,7 +79,7 @@ Person_v1
 
 ---
 
-## src Directory
+### src Directory
 
 The `src` directory contains the Java classes.
 
@@ -100,7 +100,7 @@ These classes contain:
 
 ---
 
-## Test Directory
+### Test Directory
 
 The `Test` directory contains JUnit test classes.
 
