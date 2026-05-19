@@ -9,10 +9,11 @@ The goal is not to cover every IntelliJ feature, but to explain the tools and wo
 The guide focuses on:
 
 - creating Java projects
+- organizing exercises
 - creating classes
-- running JUnit tests
-- navigating code
-- working efficiently in IntelliJ
+- creating JUnit tests
+- running tests
+- navigating code efficiently
 
 ---
 
@@ -33,7 +34,95 @@ The course primarily uses IntelliJ IDEA Community Edition.
 
 ---
 
-# 2. Creating a New Project
+# 2. Recommended PRO1 Structure
+
+In PRO1, it is recommended to organize work using:
+
+- one IntelliJ project
+- one module per exercise
+
+This creates a clean and simple structure.
+
+Example:
+
+```text
+PRO1
+├── Person_v1
+├── Person_v2
+├── Person_v3
+├── Rectangle_v1
+└── Temperature_v1
+```
+
+Each exercise becomes an independent module.
+
+Advantages:
+
+- exercises remain separated
+- testing becomes simpler
+- errors are isolated
+- navigation becomes easier
+
+---
+
+# 3. Structure of an Exercise Module
+
+A typical module structure:
+
+```text
+Person_v1
+├── src
+│   └── Person.java
+└── Test
+    └── PersonTest.java
+```
+
+---
+
+## src Directory
+
+The `src` directory contains the Java classes.
+
+Example:
+
+```text
+Person.java
+Rectangle.java
+Temperature.java
+```
+
+These classes contain:
+
+- state
+- behavior
+- invariants
+- object-oriented design
+
+---
+
+## Test Directory
+
+The `Test` directory contains JUnit test classes.
+
+Example:
+
+```text
+PersonTest.java
+RectangleTest.java
+```
+
+The tests verify:
+
+- object behavior
+- calculations
+- invariants
+- exceptions
+
+Separating tests from source code improves readability and structure.
+
+---
+
+# 4. Creating a New IntelliJ Project
 
 ## Step 1
 
@@ -64,7 +153,7 @@ Choose the correct JDK.
 Example:
 
 ```text
-JDK 21
+JDK 25
 ```
 
 If no JDK is installed, IntelliJ can usually download one automatically.
@@ -78,7 +167,7 @@ Choose a project name.
 Example:
 
 ```text
-PRO1-Exercises
+PRO1
 ```
 
 ---
@@ -93,57 +182,118 @@ Create
 
 ---
 
-# 3. Understanding the Project Structure
+# 5. Creating a Module for an Exercise
 
-A typical project structure:
+Each exercise should normally be created as its own module.
+
+---
+
+## Step 1
+
+Right-click the project name.
+
+---
+
+## Step 2
+
+Select:
 
 ```text
-src
-├── main
-│   └── java
-└── test
-    └── java
+New → Module
 ```
 
 ---
 
-## main/java
+## Step 3
 
-Contains the application classes.
+Choose:
+
+```text
+Java
+```
+
+---
+
+## Step 4
+
+Choose a module name.
 
 Example:
 
 ```text
-Person.java
-Rectangle.java
-Temperature.java
+Person_v1
 ```
 
 ---
 
-## test/java
+## Step 5
 
-Contains JUnit test classes.
-
-Example:
+Press:
 
 ```text
-PersonTest.java
-RectangleTest.java
+Create
 ```
-
-Keeping production code and test code separated is important.
 
 ---
 
-# 4. Creating a Class
+# 6. Creating the src Directory
+
+Inside the module:
+
+## Step 1
+
+Right-click the module name.
+
+---
+
+# 2. Creating the Test Directory
+
+## Step 1
+
+Right-click the module name.
+
+---
+
+## Step 2
+
+Select:
+
+```text
+New → Directory
+```
+
+---
+
+## Step 3
+
+Create:
+
+```text
+Test
+```
+
+---
+
+## Step 4
+
+Right-click the `Test` directory.
+
+Select:
+
+```text
+Mark Directory As → Test Sources Root
+```
+
+---
+
+# 3. Creating a Class
 
 ## Step 1
 
 Right-click:
 
 ```text
-src/main/java
+src
 ```
 
 ---
@@ -182,16 +332,14 @@ IntelliJ creates the class automatically.
 
 ---
 
-# 5. Creating a Test Class
+# 4. Creating a Test Class
 
 ## Step 1
 
-Right-click the class name.
-
-Example:
+Right-click:
 
 ```text
-Person
+Test
 ```
 
 ---
@@ -201,71 +349,55 @@ Person
 Select:
 
 ```text
-Generate → Test
+New → Java Class
 ```
 
 ---
 
 ## Step 3
 
-Choose:
+Create a test class.
+
+Example:
 
 ```text
-JUnit 5
+PersonTest
 ```
 
 ---
 
 ## Step 4
 
-Select methods to test.
-
----
-
-## Step 5
-
-Press:
-
-```text
-OK
-```
-
-The test class is usually created in:
-
-```text
-src/test/java
-```
-
----
-
-# 6. Running Tests
-
-JUnit tests can be run directly in IntelliJ.
-
-## Run a Single Test
-
-Click the green triangle next to the test method.
+Write JUnit tests inside the test class.
 
 Example:
 
 ```java
 @Test void getAge()
 {
-  // ...
+  Person person = new Person("Bob", 20);
+
+  assertEquals(20, person.getAge());
 }
 ```
+
+---
+
+# 5. Running Tests
+
+JUnit tests can be run directly in IntelliJ.
+
+---
+
+## Run a Single Test
+
+Click the green triangle next to the test method.
 
 ---
 
 ## Run an Entire Test Class
 
 Click the green triangle next to the class name.
-
-Example:
-
-```java
-public class PersonTest
-```
 
 ---
 
@@ -292,20 +424,13 @@ IntelliJ shows:
 
 ---
 
-# 7. Useful Keyboard Shortcuts
+# 6. Useful Keyboard Shortcuts
 
 ## Search Everywhere
 
 ```text
 Double Shift
 ```
-
-Searches:
-
-- classes
-- files
-- methods
-- actions
 
 ---
 
@@ -331,14 +456,6 @@ Useful for generating:
 Alt + Enter
 ```
 
-Shows IntelliJ suggestions.
-
-Examples:
-
-- import missing classes
-- create methods
-- fix syntax problems
-
 ---
 
 ## Reformat Code
@@ -346,8 +463,6 @@ Examples:
 ```text
 Ctrl + Alt + L
 ```
-
-Automatically formats the code.
 
 ---
 
@@ -357,8 +472,6 @@ Automatically formats the code.
 Shift + F6
 ```
 
-Renames variables, methods, or classes safely.
-
 ---
 
 ## Navigate to Declaration
@@ -367,225 +480,66 @@ Renames variables, methods, or classes safely.
 Ctrl + Click
 ```
 
-Navigates directly to:
-
-- method definitions
-- class definitions
-- variable declarations
-
 ---
 
-# 8. Common IntelliJ Icons
-
-| Icon | Meaning |
-|---|---|
-| Green triangle | run |
-| Red underline | syntax error |
-| Yellow underline | warning |
-| Blue class icon | class |
-| Green circle in tests | test passed |
-| Red circle in tests | test failed |
-
----
-
-# 9. Reading Error Messages
-
-Error messages are important.
-
-Common examples:
-
-## Cannot Resolve Symbol
-
-Example:
-
-```text
-Cannot resolve symbol 'ArrayList'
-```
-
-Often caused by:
-
-- missing import
-- spelling mistakes
-
----
-
-## ';' Expected
-
-Usually caused by:
-- missing semicolon
-
-Example:
-
-```java
-int x = 5
-```
-
-Correct:
-
-```java
-int x = 5;
-```
-
----
-
-## Incompatible Types
-
-Example:
-
-```text
-Required: String
-Found: int
-```
-
-The assigned value has the wrong type.
-
----
-
-# 10. Working with JUnit
-
-JUnit tests should normally be written continuously during development.
-
-Example:
-
-```java
-@Test void isAdult()
-{
-  Person person = new Person("Bob", 20);
-
-  assertTrue(person.isAdult());
-}
-```
-
-The course strongly emphasizes:
-
-- testing behavior
-- testing invariants
-- testing boundary values
-
----
-
-# 11. IntelliJ and Imports
-
-IntelliJ usually adds imports automatically.
-
-Example:
-
-```java
-import java.util.ArrayList;
-import java.time.LocalDate;
-```
-
-If imports are missing:
-
-```text
-Alt + Enter
-```
-
-usually fixes the problem.
-
----
-
-# 12. Packages
-
-Packages organize classes.
-
-Example:
-
-```java
-package model;
-```
-
-Packages help structure larger systems.
-
-Early exercises may use very simple package structures.
-
----
-
-# 13. Code Completion
-
-IntelliJ provides code completion.
-
-Example:
-
-```java
-person.
-```
-
-IntelliJ suggests:
-
-- methods
-- fields
-- variables
-
-Code completion helps:
-
-- reduce typing
-- discover available methods
-- avoid spelling mistakes
-
----
-
-# 14. Refactoring
-
-Refactoring means improving code structure without changing behavior.
-
-IntelliJ supports safe refactoring.
-
-Examples:
-- rename methods
-- rename variables
-- extract methods
-- move classes
-
-Refactoring is important for maintaining readable code.
-
----
-
-# 15. Common Beginner Mistakes in IntelliJ
+# 7. Common Beginner Mistakes
 
 Common mistakes:
-1. Writing classes inside the wrong folder
-2. Forgetting to create tests
-3. Ignoring warnings and errors
-4. Running the wrong test class
+
+1. Creating classes in the wrong module
+2. Forgetting to mark `src` as Sources Root
+3. Forgetting to mark `Test` as Test Sources Root
+4. Mixing tests and source classes
 5. Forgetting imports
-6. Misunderstanding package structure
-7. Using generated code without understanding it
+6. Ignoring IntelliJ warnings
+7. Writing all code in one class
+8. Using generated code without understanding it
 
 ---
 
-# 16. Recommended Workflow
+# 8. Recommended Workflow
 
 A recommended workflow for PRO1:
 
-1. Create the class
-2. Create the test class
-3. Write a small test
-4. Implement the simplest code
-5. Run the test
-6. Improve the design
-7. Repeat
+1. Create the module
+2. Create the `src` directory
+3. Create the `Test` directory
+4. Create the class
+5. Create the test class
+6. Write a small test
+7. Implement the simplest code
+8. Run the test
+9. Improve the design
+10. Repeat
 
-This supports the test-first and design-first approach of the course.
+This supports the:
 
----
+- test-first approach
+- design-first approach
+- object-first approach
 
-# 17. IntelliJ and Course Philosophy
-
-IntelliJ is a tool.
-
-The most important goal is still:
-
-- understanding object-oriented thinking
-- assigning responsibility correctly
-- designing meaningful classes
-- protecting invariants
-- writing readable code
-
-The IDE supports these activities but does not replace understanding.
+used throughout the course.
 
 ---
 
 # Final Remarks
 
-Learning IntelliJ takes pract
+Learning IntelliJ takes practice.
+
+Students are encouraged to:
+
+- explore the IDE
+- use keyboard shortcuts
+- read error messages carefully
+- run tests frequently
+- organize exercises clearly
+- think in terms of objects and responsibility
+
+Efficient use of IntelliJ helps students focus more on:
+
+- design
+- testing
+- responsibility
+- object-oriented thinking
+
+rather than syntax details.
