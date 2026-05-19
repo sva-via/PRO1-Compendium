@@ -17,7 +17,7 @@ The guide focuses on:
 
 ---
 
-# 1. What Is IntelliJ IDEA?
+## 1. What Is IntelliJ IDEA?
 
 IntelliJ IDEA is an Integrated Development Environment (IDE).
 
@@ -34,7 +34,7 @@ The course primarily uses IntelliJ IDEA Community Edition.
 
 ---
 
-# 2. Recommended PRO1 Structure
+## 2. Recommended PRO1 Structure
 
 In PRO1, it is recommended to organize work using:
 
@@ -65,7 +65,7 @@ Advantages:
 
 ---
 
-# 3. Structure of an Exercise Module
+## 3. Structure of an Exercise Module
 
 A typical module structure:
 
@@ -122,7 +122,7 @@ Separating tests from source code improves readability and structure.
 
 ---
 
-# 4. Creating a New IntelliJ Project
+## 4. Creating a New IntelliJ Project
 
 ## Step 1
 
@@ -182,7 +182,7 @@ Create
 
 ---
 
-# 5. Creating a Module for an Exercise
+## 5. Creating a Module for an Exercise
 
 Each exercise should normally be created as its own module.
 
@@ -236,7 +236,7 @@ Create
 
 ---
 
-# 6. Creating the Test Directory
+## 6. Creating the Test Directory
 
 ## Step 1
 
@@ -276,7 +276,7 @@ Mark Directory As → Test Sources Root
 
 ---
 
-# 7. Creating a Class
+## 7. Creating a Class
 
 ## Step 1
 
@@ -322,7 +322,7 @@ IntelliJ creates the class automatically.
 
 ---
 
-# 8. Creating a Test Class
+## 8. Creating a Test Class
 
 The easiest way to create a JUnit test class in IntelliJ is directly from the class being tested.
 
@@ -414,7 +414,7 @@ IntelliJ automatically:
 ---
 
 
-# 9. Running Tests
+## 9. Running Tests
 
 JUnit tests can be run directly in IntelliJ.
 
@@ -455,7 +455,7 @@ IntelliJ shows:
 
 ---
 
-# 10. Useful Keyboard Shortcuts
+## 10. Useful Keyboard Shortcuts
 
 ## Search Everywhere
 
@@ -513,7 +513,7 @@ Ctrl + Click
 
 ---
 
-# 11. Common Beginner Mistakes
+## 11. Common Beginner Mistakes
 
 Common mistakes:
 
@@ -527,7 +527,7 @@ Common mistakes:
 
 ---
 
-# 12. Recommended Workflow
+## 12. Recommended Workflow
 
 A recommended workflow for PRO1:
 
