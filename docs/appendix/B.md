@@ -236,16 +236,6 @@ Create
 
 ---
 
-# 6. Creating the src Directory
-
-Inside the module:
-
-## Step 1
-
-Right-click the module name.
-
----
-
 # 2. Creating the Test Directory
 
 ## Step 1
