@@ -487,13 +487,12 @@ Ctrl + Click
 Common mistakes:
 
 1. Creating classes in the wrong module
-2. Forgetting to mark `src` as Sources Root
-3. Forgetting to mark `Test` as Test Sources Root
-4. Mixing tests and source classes
-5. Forgetting imports
-6. Ignoring IntelliJ warnings
-7. Writing all code in one class
-8. Using generated code without understanding it
+2. Forgetting to mark `Test` as Test Sources Root
+3. Mixing tests and source classes
+4. Forgetting imports
+5. Ignoring IntelliJ warnings
+6. Writing all code in one class
+7. Using generated code without understanding it
 
 ---
 
@@ -502,15 +501,14 @@ Common mistakes:
 A recommended workflow for PRO1:
 
 1. Create the module
-2. Create the `src` directory
-3. Create the `Test` directory
-4. Create the class
-5. Create the test class
-6. Write a small test
-7. Implement the simplest code
-8. Run the test
-9. Improve the design
-10. Repeat
+2. Create the `Test` directory
+3. Create the class
+4. Create the test class
+5. Write a small test
+6. Implement the simplest code
+7. Run the test
+8. Improve the design
+9. Repeat
 
 This supports the:
 
