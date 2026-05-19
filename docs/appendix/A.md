@@ -15,7 +15,7 @@ The appendix focuses only on syntax introduced in the course.
 
 ---
 
-# 1. Class Structure
+## 1. Class Structure
 
 ```java
 public class Person
@@ -43,9 +43,9 @@ Main parts:
 
 ---
 
-# 2. Variables
+## 2. Variables
 
-## Primitive Variables
+### Primitive Variables
 
 ```java
 int age = 20;
@@ -56,7 +56,7 @@ char grade = 'A';
 
 ---
 
-## Reference Variables
+### Reference Variables
 
 ```java
 String name = "Bob";
@@ -67,7 +67,7 @@ Reference variables store references to objects.
 
 ---
 
-# 3. Primitive Types
+## 3. Primitive Types
 
 | Type | Example |
 |---|---|
@@ -78,7 +78,7 @@ Reference variables store references to objects.
 
 ---
 
-# 4. Strings
+## 4. Strings
 
 ```java
 String name = "Ada";
@@ -97,7 +97,7 @@ name.substring(0, 2)
 
 ---
 
-# 5. Creating Objects
+## 5. Creating Objects
 
 ```java
 Person person = new Person("Bob");
@@ -111,7 +111,7 @@ ClassName variable = new ClassName(arguments);
 
 ---
 
-# 6. Fields (Instance Variables)
+## 6. Fields (Instance Variables)
 
 ```java
 private String name;
@@ -122,7 +122,7 @@ Fields store object state.
 
 ---
 
-# 7. Constructors
+## 7. Constructors
 
 ```java
 public Person(String name)
@@ -139,9 +139,9 @@ Constructors:
 
 ---
 
-# 8. Methods
+## 8. Methods
 
-## Method Returning a Value
+### Method Returning a Value
 
 ```java
 public int getAge()
@@ -152,7 +152,7 @@ public int getAge()
 
 ---
 
-## Void Method
+### Void Method
 
 ```java
 public void birthday()
@@ -163,7 +163,7 @@ public void birthday()
 
 ---
 
-## Boolean Method
+### Boolean Method
 
 ```java
 public boolean isAdult()
@@ -174,7 +174,7 @@ public boolean isAdult()
 
 ---
 
-# 9. this
+## 9. this
 
 `this` refers to the current object.
 
@@ -188,7 +188,7 @@ Used to distinguish fields from parameters.
 
 ---
 
-# 10. Constructor Delegation
+## 10. Constructor Delegation
 
 ```java
 public Person(String name)
@@ -201,7 +201,7 @@ A constructor can call another constructor using `this(...)`.
 
 ---
 
-# 11. if Statements
+## 11. if Statements
 
 ```java
 if (age >= 18)
@@ -212,7 +212,7 @@ if (age >= 18)
 
 ---
 
-## if-else
+### if-else
 
 ```java
 if (age >= 18)
@@ -227,7 +227,7 @@ else
 
 ---
 
-## else-if
+### else-if
 
 ```java
 if (age < 13)
@@ -246,7 +246,7 @@ else
 
 ---
 
-# 12. switch
+## 12. switch
 
 ```java
 switch(day)
@@ -264,7 +264,7 @@ switch(day)
 
 ---
 
-# 13. Relational Operators
+## 13. Relational Operators
 
 | Operator | Meaning |
 |---|---|
@@ -277,7 +277,7 @@ switch(day)
 
 ---
 
-# 14. Logical Operators
+## 14. Logical Operators
 
 | Operator | Meaning |
 |---|---|
@@ -296,7 +296,7 @@ if (age >= 18 && age < 65)
 
 ---
 
-# 15. Comparing Strings
+## 15. Comparing Strings
 
 Correct:
 
@@ -316,7 +316,7 @@ name == "Bob"
 
 ---
 
-# 16. null
+## 16. null
 
 ```java
 Person person = null;
@@ -333,7 +333,7 @@ if (person != null)
 
 ---
 
-# 17. Arrays
+## 17. Arrays
 
 ## Creating Arrays
 
@@ -343,7 +343,7 @@ int[] numbers = new int[10];
 
 ---
 
-## Accessing Elements
+### Accessing Elements
 
 ```java
 numbers[0]
@@ -352,7 +352,7 @@ numbers[1]
 
 ---
 
-## Array Length
+### Array Length
 
 ```java
 numbers.length
@@ -360,7 +360,7 @@ numbers.length
 
 ---
 
-# 18. for Loops
+## 18. for Loops
 
 ```java
 for (int i = 0; i < size; i++)
@@ -373,7 +373,7 @@ Used frequently for arrays.
 
 ---
 
-# 19. Enhanced for Loops
+## 19. Enhanced for Loops
 
 ```java
 for (int number : numbers)
@@ -386,7 +386,7 @@ Used when indexes are unnecessary.
 
 ---
 
-# 20. while Loops
+## 20. while Loops
 
 ```java
 while (x > 0)
@@ -397,7 +397,7 @@ while (x > 0)
 
 ---
 
-# 21. do-while Loops
+## 21. do-while Loops
 
 ```java
 do
@@ -411,9 +411,9 @@ Executes at least once.
 
 ---
 
-# 22. ArrayList
+## 22. ArrayList
 
-## Import
+### Import
 
 ```java
 import java.util.ArrayList;
@@ -421,7 +421,7 @@ import java.util.ArrayList;
 
 ---
 
-## Creating an ArrayList
+### Creating an ArrayList
 
 ```java
 ArrayList<String> names;
@@ -430,7 +430,7 @@ names = new ArrayList<String>();
 
 ---
 
-## Adding Elements
+### Adding Elements
 
 ```java
 names.add("Ada");
@@ -438,7 +438,7 @@ names.add("Ada");
 
 ---
 
-## Accessing Elements
+### Accessing Elements
 
 ```java
 names.get(0)
@@ -446,7 +446,7 @@ names.get(0)
 
 ---
 
-## Replacing Elements
+### Replacing Elements
 
 ```java
 names.set(0, "Bob")
@@ -454,7 +454,7 @@ names.set(0, "Bob")
 
 ---
 
-## Removing Elements
+### Removing Elements
 
 ```java
 names.remove(0)
@@ -462,7 +462,7 @@ names.remove(0)
 
 ---
 
-## Collection Size
+### Collection Size
 
 ```java
 names.size()
@@ -470,9 +470,9 @@ names.size()
 
 ---
 
-# 23. Exceptions
+## 23. Exceptions
 
-## Throwing Exceptions
+### Throwing Exceptions
 
 ```java
 throw new IllegalArgumentException(
@@ -481,7 +481,7 @@ throw new IllegalArgumentException(
 
 ---
 
-## try-catch
+### try-catch
 
 ```java
 try
@@ -496,9 +496,9 @@ catch (Exception e)
 
 ---
 
-# 24. JUnit Basics
+## 24. JUnit Basics
 
-## Simple Test
+### Simple Test
 
 ```java
 @Test void getAge()
@@ -511,7 +511,7 @@ catch (Exception e)
 
 ---
 
-## Testing Exceptions
+### Testing Exceptions
 
 ```java
 @Test void illegalAge()
@@ -523,7 +523,7 @@ catch (Exception e)
 
 ---
 
-# 25. toString()
+## 25. toString()
 
 ```java
 public String toString()
@@ -536,7 +536,7 @@ Provides a textual representation of the object.
 
 ---
 
-# 26. equals()
+## 26. equals()
 
 ```java
 public boolean equals(Object obj)
@@ -549,9 +549,9 @@ Used to compare object meaning or contents.
 
 ---
 
-# 27. LocalDate
+## 27. LocalDate
 
-## Import
+### Import
 
 ```java
 import java.time.LocalDate;
@@ -559,7 +559,7 @@ import java.time.LocalDate;
 
 ---
 
-## Creating Dates
+### Creating Dates
 
 ```java
 LocalDate birthday = LocalDate.of(2000, 10, 25);
@@ -567,7 +567,7 @@ LocalDate birthday = LocalDate.of(2000, 10, 25);
 
 ---
 
-## Useful Methods
+### Useful Methods
 
 ```java
 LocalDate.now()
@@ -576,7 +576,7 @@ birthday.isAfter(LocalDate.now())
 
 ---
 
-# 28. UML Visibility Symbols
+## 28. UML Visibility Symbols
 
 | Symbol | Meaning |
 |---|---|
@@ -592,7 +592,7 @@ Example:
 
 ---
 
-# 29. Common Java Keywords
+## 29. Common Java Keywords
 
 | Keyword | Purpose |
 |---|---|
@@ -612,7 +612,7 @@ Example:
 
 ---
 
-# 30. Common Beginner Mistakes
+## 30. Common Beginner Mistakes
 
 Common mistakes include:
 
@@ -628,7 +628,7 @@ Common mistakes include:
 
 ---
 
-# Final Remarks
+## Final Remarks
 
 This appendix is intended as a quick syntax reference during the course.
 
