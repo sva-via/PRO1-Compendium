@@ -324,54 +324,95 @@ IntelliJ creates the class automatically.
 
 # 8. Creating a Test Class
 
+The easiest way to create a JUnit test class in IntelliJ is directly from the class being tested.
+
+---
+
 ## Step 1
 
-Right-click:
+Open the class.
+
+Example:
 
 ```text
-Test
+Person.java
 ```
 
 ---
 
 ## Step 2
 
-Select:
+Place the cursor on the class name.
 
-```text
-New → Java Class
+Example:
+
+```java
+public class Person
 ```
 
 ---
 
 ## Step 3
 
-Create a test class.
-
-Example:
+Press:
 
 ```text
-PersonTest
+Alt + Enter
 ```
 
 ---
 
 ## Step 4
 
-Write JUnit tests inside the test class.
+Select:
 
-Example:
-
-```java
-@Test void getAge()
-{
-  Person person = new Person("Bob", 20);
-
-  assertEquals(20, person.getAge());
-}
+```text
+Create Test
 ```
 
 ---
+
+## Step 5
+
+Choose:
+
+```text
+JUnit 5
+```
+
+If JUnit is not configured yet, IntelliJ will usually show a warning or suggestion.
+
+Click:
+
+```text
+Fix
+```
+
+IntelliJ will then:
+
+- download JUnit if necessary
+- configure the module
+- add the required libraries automatically
+
+---
+
+## Step 6
+
+Press:
+
+```text
+OK
+```
+
+IntelliJ automatically:
+
+- creates `PersonTest`
+- places it in the `Test` directory
+- adds JUnit imports
+- creates test method skeletons
+
+---
+
 
 # 9. Running Tests
 
