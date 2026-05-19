@@ -13,7 +13,7 @@ The appendix explains:
 
 ---
 
-# Important Note About PRO1
+## Important Note About PRO1
 
 The PRO1 course is primarily:
 
@@ -39,7 +39,7 @@ However, understanding simple console I/O is still useful for:
 
 ---
 
-# 1. Console Output
+## 1. Console Output
 
 Java can print text to the console.
 
@@ -59,7 +59,7 @@ A newline is added automatically.
 
 ---
 
-## Printing Variables
+### Printing Variables
 
 Example:
 
@@ -79,7 +79,7 @@ System.out.println(name);
 
 ---
 
-## Concatenating Output
+### Concatenating Output
 
 Strings can be combined using `+`.
 
@@ -94,7 +94,7 @@ System.out.println(name + " is " + age + " years old");
 
 ---
 
-# 2. The main Method
+## 2. The main Method
 
 Console programs usually begin with a `main` method.
 
@@ -114,7 +114,7 @@ The `main` method is the program entry point.
 
 ---
 
-# Important Course Note
+### Important Course Note
 
 The PRO1 course generally avoids using `main` in exercises.
 
@@ -129,7 +129,7 @@ You should therefore think of console examples as supplementary material.
 
 ---
 
-# 3. Scanner
+## 3. Scanner
 
 `Scanner` reads input from the console.
 
@@ -143,7 +143,7 @@ import java.util.Scanner;
 
 ---
 
-# 4. Creating a Scanner
+## 4. Creating a Scanner
 
 Example:
 
@@ -162,7 +162,7 @@ Explanation:
 
 ---
 
-# 5. Reading Strings
+## 5. Reading Strings
 
 Example:
 
@@ -177,7 +177,7 @@ String name = input.nextLine();
 
 ---
 
-# 6. Reading int Values
+## 6. Reading int Values
 
 Example:
 
@@ -192,7 +192,7 @@ int age = input.nextInt();
 
 ---
 
-# 7. Reading double Values
+## 7. Reading double Values
 
 Example:
 
@@ -207,7 +207,7 @@ double temp = input.nextDouble();
 
 ---
 
-# 8. Reading boolean Values
+## 8. Reading boolean Values
 
 Example:
 
@@ -227,7 +227,7 @@ false
 
 ---
 
-# 9. Common Scanner Problem
+## 9. Common Scanner Problem
 
 A common beginner problem occurs when mixing:
 
@@ -254,7 +254,7 @@ may become an empty string.
 
 ---
 
-# 10. Fixing the nextLine Problem
+## 10. Fixing the nextLine Problem
 
 A common solution:
 
@@ -269,7 +269,7 @@ The extra `nextLine()` consumes the remaining newline.
 
 ---
 
-# 11. Example Console Program
+## 11. Example Console Program
 
 Example:
 
@@ -295,7 +295,7 @@ public class Main
 
 ---
 
-# 12. Scanner and Exceptions
+## 12. Scanner and Exceptions
 
 Invalid input may cause exceptions.
 
@@ -321,7 +321,7 @@ an exception occurs.
 
 ---
 
-# 13. Simple try-catch Example
+## 13. Simple try-catch Example
 
 Example:
 
@@ -340,7 +340,7 @@ This topic becomes more important later in the course.
 
 ---
 
-# 14. Closing the Scanner
+## 14. Closing the Scanner
 
 A scanner can be closed.
 
@@ -354,7 +354,7 @@ For simple beginner programs this is often not emphasized heavily.
 
 ---
 
-# 15. Console Programs vs Object-Oriented Design
+## 15. Console Programs vs Object-Oriented Design
 
 Console I/O should usually be separated from domain logic.
 
@@ -385,7 +385,7 @@ not user interface logic.
 
 ---
 
-# 16. Console I/O and Testing
+## 16. Console I/O and Testing
 
 Console programs are difficult to test automatically.
 
@@ -415,7 +415,7 @@ The first approach is easier to test.
 
 ---
 
-# 17. Recommended Use in PRO1
+## 17. Recommended Use in PRO1
 
 Use console I/O mainly for:
 
@@ -433,7 +433,7 @@ The primary focus of the course remains:
 
 ---
 
-# 18. Common Beginner Mistakes
+## 18. Common Beginner Mistakes
 
 Common mistakes:
 
@@ -447,7 +447,7 @@ Common mistakes:
 
 ---
 
-# 19. Reflection Questions
+## 19. Reflection Questions
 
 - What is the purpose of `Scanner`?
 - Why does `nextLine()` sometimes return an empty string?
