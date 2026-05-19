@@ -236,7 +236,7 @@ Create
 
 ---
 
-# 2. Creating the Test Directory
+# 6. Creating the Test Directory
 
 ## Step 1
 
@@ -276,7 +276,7 @@ Mark Directory As → Test Sources Root
 
 ---
 
-# 3. Creating a Class
+# 7. Creating a Class
 
 ## Step 1
 
@@ -322,7 +322,7 @@ IntelliJ creates the class automatically.
 
 ---
 
-# 4. Creating a Test Class
+# 8. Creating a Test Class
 
 ## Step 1
 
@@ -373,7 +373,7 @@ Example:
 
 ---
 
-# 5. Running Tests
+# 9. Running Tests
 
 JUnit tests can be run directly in IntelliJ.
 
@@ -414,7 +414,7 @@ IntelliJ shows:
 
 ---
 
-# 6. Useful Keyboard Shortcuts
+# 10. Useful Keyboard Shortcuts
 
 ## Search Everywhere
 
@@ -472,7 +472,7 @@ Ctrl + Click
 
 ---
 
-# 7. Common Beginner Mistakes
+# 11. Common Beginner Mistakes
 
 Common mistakes:
 
@@ -486,7 +486,7 @@ Common mistakes:
 
 ---
 
-# 8. Recommended Workflow
+# 12. Recommended Workflow
 
 A recommended workflow for PRO1:
 
