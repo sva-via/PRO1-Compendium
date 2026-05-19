@@ -132,6 +132,7 @@ public Person(String name)
 ```
 
 Constructors:
+
 - have the same name as the class
 - have no return type
 - initialize objects
