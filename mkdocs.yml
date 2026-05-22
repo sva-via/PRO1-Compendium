@@ -32,6 +32,9 @@ nav:
       - "Chapter 8: Loops": chapter/08.md
       - "Chapter 9: ArrayList": chapter/09.md
       - "Chapter 10: Associations": chapter/10.md
+      - "Chapter 11: Associations One-to-many": chapter/11.md
+      - "Chapter 12: Inheritance": chapter/12.md
+      - "Chapter 13: Inheritance design": chapter/13.md
   - Appendices:
       - "Appendix A: Java Syntax Quick Reference": appendix/A.md
       - "Appendix B: IntelliJ IDEA Quick Guide": appendix/B.md
