@@ -1,5 +1,12 @@
 # PRO1 Compendium
 
+
+## Quick start
+
+- **Start here:** [Chapter 1 – What is an object?](chapter/01.md)
+- **Appendix:** [Appendix A – Java-syntaks quick reference](appendix/A.md)
+
+
 ## Introduction
 
 Welcome to the PRO1 compendium.
