@@ -39,7 +39,7 @@ nav:
       - "Chapter 15: File Persistence": chapter/15.md
       - "Chapter 16: GUI (Step 1, Layout)": chapter/16.md
       - "Chapter 17: GUI (Step 2, Data and Events):": chapter/17.md
-      - "Chapter 18: GUI (Step 3, View state): chapter/18.md
+      - "Chapter 18: GUI (Step 3, View state)": chapter/18.md
   - Appendices:
       - "Appendix A: Java Syntax Quick Reference": appendix/A.md
       - "Appendix B: IntelliJ IDEA Quick Guide": appendix/B.md
