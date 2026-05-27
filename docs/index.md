@@ -21,7 +21,7 @@ The course uses Java as the programming language, but the primary focus is objec
 
 ---
 
-# Course Philosophy
+## Course Philosophy
 
 The course follows an:
 
@@ -50,7 +50,7 @@ The goal is to understand how software systems are built from collaborating obje
 
 ---
 
-# Learning Goals
+## Learning Goals
 
 The course aims to give students the ability to:
 
@@ -76,7 +76,7 @@ Later sessions also introduce:
 
 ---
 
-# Focus of the Course
+## Focus of the Course
 
 The course focuses strongly on responsibility and design.
 
@@ -112,7 +112,7 @@ The compendium is intended to:
 
 ---
 
-# Recommended Way to Study
+## Recommended Way to Study
 
 The course is cumulative.
 
@@ -132,11 +132,11 @@ Understanding the ideas behind the code is more important than memorizing syntax
 
 ---
 
-# Important Design Principles
+## Important Design Principles
 
 Throughout the course, several core principles are repeated.
 
-## Encapsulation
+### Encapsulation
 
 Objects should protect their own state.
 
@@ -144,7 +144,7 @@ Internal data should usually remain private.
 
 ---
 
-## Responsibility
+### Responsibility
 
 Logic should belong inside the responsible object.
 
@@ -162,7 +162,7 @@ person.getAge() >= 18
 
 ---
 
-## Invariants
+### Invariants
 
 Objects should always remain valid.
 
@@ -172,7 +172,7 @@ Methods preserve valid state.
 
 ---
 
-## Collaboration
+### Collaboration
 
 Objects solve problems by collaborating with other objects.
 
@@ -180,7 +180,7 @@ Associations and collections become increasingly important later in the course.
 
 ---
 
-## Readability
+### Readability
 
 Readable code is important.
 
@@ -193,7 +193,7 @@ Code should:
 
 ---
 
-# Testing
+## Testing
 
 Testing is introduced early in the course.
 
@@ -214,7 +214,7 @@ Testing is considered part of normal software development.
 
 ---
 
-# UML and Design
+## UML and Design
 
 UML diagrams are used throughout the course.
 
@@ -229,11 +229,11 @@ The focus is not advanced UML notation, but understanding how design maps to imp
 
 ---
 
-# Course Progression
+## Course Progression
 
 The course gradually introduces more advanced object-oriented concepts.
 
-## Early Sessions
+### Early Sessions
 
 Focus on:
 
@@ -244,7 +244,7 @@ Focus on:
 - state and behavior
 - testing
 
-## Middle Sessions
+### Middle Sessions
 
 Focus on:
 
@@ -256,7 +256,7 @@ Focus on:
 - collections
 - object collaboration
 
-## Later Sessions
+### Later Sessions
 
 Focus on:
 
@@ -272,7 +272,7 @@ Each topic builds on earlier understanding.
 
 ---
 
-# Common Beginner Challenges
+## Common Beginner Challenges
 
 Many students initially struggle with:
 
@@ -289,7 +289,7 @@ Object-oriented thinking develops gradually through practice.
 
 ---
 
-# About the Examples
+## About the Examples
 
 The examples in this compendium are intentionally small.
 
@@ -310,7 +310,7 @@ Examples are chosen to illustrate:
 
 ---
 
-# Preparing for the Exam
+## Preparing for the Exam
 
 The oral exam focuses on:
 
@@ -329,7 +329,7 @@ Success in the course requires:
 
 ---
 
-# Final Remarks
+## Final Remarks
 
 Object-oriented programming is not only about writing code.
 
