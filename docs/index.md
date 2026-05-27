@@ -71,15 +71,10 @@ The course aims to give students the ability to:
 - test object behavior using JUnit
 - handle exceptions correctly
 - design maintainable object-oriented systems
-
-Later sessions also introduce:
-
 - inheritance
 - polymorphism
-- GUI programming
-- file handling
-- persistence
-- event-driven programming
+- GUI programming in JavaFX
+- file persistence
 
 ---
 
