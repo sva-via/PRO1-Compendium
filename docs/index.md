@@ -264,11 +264,8 @@ Focus on:
 
 - inheritance
 - polymorphism
-- exceptions
-- file handling
-- GUI applications
-- persistence
-- event-driven systems
+- file persistence
+- GUI applications in JavaFX
 
 Each topic builds on earlier understanding.
 
