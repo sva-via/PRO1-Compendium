@@ -28,7 +28,31 @@ The course uses Java as the programming language, but the primary focus is objec
 
 ---
 
-## Course Philosophy
+## Recommended Reference Book
+
+This compendium is the primary course material.
+
+Students may also use the following book as a supplementary reference:
+
+**Tony Gaddis**
+*Starting Out with Java: Early Objects, Global Edition (5th Edition)*
+
+The book is intended as a reference and lookup resource rather than a course textbook.
+
+It can be useful for:
+
+- alternative explanations of Java concepts
+- additional examples
+- clarification of Java syntax
+- further practice exercises
+
+The course follows its own progression and emphasis on object-oriented design, responsibility, testing, and domain modelling. Therefore, topics in the book may appear in a different order than in this course.
+
+Students should primarily follow the course material and use the book when additional explanation or examples are needed.
+
+---
+
+## PRO1 Course Philosophy
 
 The course follows an:
 
