@@ -1,9 +1,7 @@
-# Documentation
+# PRO1-Compendium
 
-This repository contains documentation in multiple languages. The default is Danish.
+English version.
 
-## Available Languages
-- [Danish](da/docs/index.md)
-- [English](en/docs/index.md)
+For the Danish edition see:
 
-Please select your preferred language to proceed.
+https://github.com/sva-via/PRO1-kompendium
